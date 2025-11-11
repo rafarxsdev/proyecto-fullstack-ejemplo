@@ -3,9 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
-import { AtomicModule } from './atomic/atomic-module';
-import { CoreModule } from './core/core-module';
-import { SharedModule } from './shared/shared-module';
 
 @NgModule({
   declarations: [
@@ -13,10 +10,7 @@ import { SharedModule } from './shared/shared-module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    AtomicModule,
-    CoreModule,
-    SharedModule
+    AppRoutingModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()
