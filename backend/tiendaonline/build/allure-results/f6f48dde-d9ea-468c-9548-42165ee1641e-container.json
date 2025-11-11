@@ -1,0 +1,1 @@
+{"uuid":"f6f48dde-d9ea-468c-9548-42165ee1641e","name":"CREATE - SellerId null debe lanzar IllegalArgumentException","children":["f07864f8-db83-49d1-a414-301b6a7d1124"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1762531503437,"stop":1762531503442}],"afters":[],"start":1762531503415,"stop":1762531503458}

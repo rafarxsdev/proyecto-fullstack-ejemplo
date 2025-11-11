@@ -1,0 +1,1 @@
+{"uuid":"cf2ae487-2ec5-4ab2-acc0-68bf3fd3fc2e","name":"DELETE - vendedor existente se elimina correctamente","children":["955db0c7-6224-4c24-8cc5-4dbdff7ccbcd"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1762531504324,"stop":1762531504325}],"afters":[],"start":1762531504317,"stop":1762531504336}

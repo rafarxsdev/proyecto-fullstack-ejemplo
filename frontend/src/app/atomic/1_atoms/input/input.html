@@ -1,0 +1,10 @@
+<mat-form-field appearance="outline" class="w-full">
+  <mat-label>{{ placeholder }}</mat-label>
+  <input matInput [type]="type" [formControl]="control">
+  <button *ngIf="icon" mat-icon-button matSuffix>
+    <mat-icon>{{ icon }}</mat-icon>
+  </button>
+  <mat-error *ngIf="control?.invalid && control?.touched">
+    Campo inválido
+  </mat-error>
+</mat-form-field>

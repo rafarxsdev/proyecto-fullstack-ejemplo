@@ -1,0 +1,1 @@
+{"uuid":"f14e179a-dcda-43b4-a092-20524dff7745","name":"CREATE - Producto válido debe retornar producto creado con ID","children":["c7b13ab6-ee3a-4735-8c0e-aede4bd6ccd7"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1762531501736,"stop":1762531501736}],"afters":[],"start":1762531501719,"stop":1762531502533}

@@ -1,0 +1,117 @@
+# Versión de Docker Compose
+version: '3.8'
+
+services:
+
+  # ==========================================
+  # BASE DE DATOS MYSQL
+  # ==========================================
+  db:
+    # Imagen de MySQL
+    image: mysql:8.0
+    container_name: mysql-db
+
+    # Credenciales de la BD
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: tienda_online
+      MYSQL_USER: rafarxs
+      MYSQL_PASSWORD: 123456
+
+    ports:
+      - "3306:3306"
+
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+    networks:
+      - app-network
+
+    # Health check para MySQL
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p123456"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+    restart: unless-stopped
+
+  # ==========================================
+  # BACKEND SPRING BOOT (INYECCIÓN DE VARIABLES CORREGIDA)
+  # ==========================================
+  backend:
+    build:
+      context: ./backend/tiendaonline
+      dockerfile: Dockerfile
+
+    container_name: spring-backend
+
+    # NOTA: Tu application-prod.properties usa 8080.
+    ports:
+      - "8080:8080"
+
+    # VARIABLES DE ENTORNO QUE COINCIDEN CON application-prod.properties
+    environment:
+      # **URL de Conexión a MySQL**
+      DATABASE_URL: "jdbc:mysql://db:3306/tienda_online?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC"
+      DATABASE_USER: rafarxs
+      DATABASE_PASSWORD: 123456
+
+      # Configuración de JPA
+      DDL_AUTO: update
+      SHOW_SQL: "true"
+      SPRING_JPA_DATABASE_PLATFORM: org.hibernate.dialect.MySQLDialect
+
+      JAVA_OPTS: "-Xms256m -Xmx512m"
+
+    # Depende de la base de datos
+    depends_on:
+      db:
+        condition: service_healthy
+
+    networks:
+      - app-network
+
+    restart: unless-stopped
+
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:8080/tienda/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # ==========================================
+  # FRONTEND ANGULAR
+  # ==========================================
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+
+    container_name: angular-frontend
+
+    ports:
+      - "4200:80"
+
+    depends_on:
+      backend:
+        condition: service_healthy
+
+    networks:
+      - app-network
+
+    restart: unless-stopped
+
+# ==========================================
+# REDES Y VOLÚMENES
+# ==========================================
+networks:
+  app-network:
+    driver: bridge
+    name: proyecto-fullstack-network
+
+volumes:
+  mysql-data:
+    name: proyecto-fullstack-mysql-data

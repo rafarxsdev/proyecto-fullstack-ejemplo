@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SellerService - Unit Tests" tests="11" skipped="0" failures="0" errors="0" timestamp="2025-11-07T16:05:03.822Z" hostname="kalirxs" time="0.539">
+  <properties/>
+  <testcase name="CREATE - formato de email inválido lanza IllegalArgumentException" classname="com.rafaelperez.tiendaonline.business.SellerServiceTest" time="0.318"/>
+  <testcase name="GET all - retorna lista vacía correctamente" classname="com.rafaelperez.tiendaonline.business.SellerServiceTest" time="0.011"/>
+  <testcase name="CREATE - email duplicado lanza IllegalArgumentException" classname="com.rafaelperez.tiendaonline.business.SellerServiceTest" time="0.012"/>
+  <testcase name="DELETE - vendedor no existente lanza RuntimeException" classname="com.rafaelperez.tiendaonline.business.SellerServiceTest" time="0.015"/>
+  <testcase name="GET all - retorna lista (no vacío)" classname="com.rafaelperez.tiendaonline.business.SellerServiceTest" time="0.008"/>
+  <testcase name="UPDATE - actualiza campos no nulos y preserva email" classname="com.rafaelperez.tiendaonline.business.SellerServiceTest" time="0.026"/>
+  <testcase name="UPDATE - vendedor no existente lanza RuntimeException" classname="com.rafaelperez.tiendaonline.business.SellerServiceTest" time="0.013"/>
+  <testcase name="GET by id - vendedor existente retorna DTO" classname="com.rafaelperez.tiendaonline.business.SellerServiceTest" time="0.009"/>
+  <testcase name="CREATE - vendedor válido retorna vendedor creado" classname="com.rafaelperez.tiendaonline.business.SellerServiceTest" time="0.015"/>
+  <testcase name="DELETE - vendedor existente se elimina correctamente" classname="com.rafaelperez.tiendaonline.business.SellerServiceTest" time="0.014"/>
+  <testcase name="GET by id - no existente lanza RuntimeException" classname="com.rafaelperez.tiendaonline.business.SellerServiceTest" time="0.016"/>
+  <system-out><![CDATA[2025-11-07T11:05:04.117-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Creando nuevo vendedor con email: bad-email-format
+2025-11-07T11:05:04.171-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Creando nuevo vendedor con email: carlos.perez@example.com
+2025-11-07T11:05:04.174-05:00  WARN 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Intento de crear vendedor con email duplicado: carlos.perez@example.com
+2025-11-07T11:05:04.191-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Eliminando vendedor ID: 999
+2025-11-07T11:05:04.195-05:00  WARN 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Vendedor no encontrado con ID: 999
+2025-11-07T11:05:04.236-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Actualizando vendedor ID: 1
+2025-11-07T11:05:04.240-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Vendedor actualizado exitosamente ID: 1
+2025-11-07T11:05:04.269-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Actualizando vendedor ID: 999
+2025-11-07T11:05:04.271-05:00  WARN 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Vendedor no encontrado con ID: 999
+2025-11-07T11:05:04.307-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Creando nuevo vendedor con email: carlos.perez@example.com
+2025-11-07T11:05:04.309-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Vendedor creado exitosamente con ID: 1
+2025-11-07T11:05:04.327-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Eliminando vendedor ID: 1
+2025-11-07T11:05:04.330-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Vendedor eliminado exitosamente ID: 1
+2025-11-07T11:05:04.357-05:00  WARN 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Vendedor no encontrado con ID: 999
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

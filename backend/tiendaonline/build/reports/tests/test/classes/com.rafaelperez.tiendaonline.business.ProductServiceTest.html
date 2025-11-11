@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ProductService - Unit Tests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ProductService - Unit Tests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.rafaelperez.tiendaonline.business.html">com.rafaelperez.tiendaonline.business</a> &gt; ProductServiceTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">17</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">10.916s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+<li>
+<a href="#">Standard error</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">CREATE - Nombre vacío debe lanzar IllegalArgumentException</td>
+<td class="success">createProduct_EmptyName_ShouldThrowException()</td>
+<td class="success">0.012s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">CREATE - Nombre muy largo debe lanzar IllegalArgumentException</td>
+<td class="success">createProduct_NameTooLong_ShouldThrowException()</td>
+<td class="success">0.022s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">CREATE - Precio negativo debe lanzar IllegalArgumentException</td>
+<td class="success">createProduct_NegativePrice_ShouldThrowException()</td>
+<td class="success">0.011s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">CREATE - Stock negativo debe lanzar IllegalArgumentException</td>
+<td class="success">createProduct_NegativeStock_ShouldThrowException()</td>
+<td class="success">0.079s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">CREATE - Vendedor inexistente debe lanzar RuntimeException</td>
+<td class="success">createProduct_NonExistentSeller_ShouldThrowException()</td>
+<td class="success">0.029s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">CREATE - Nombre null debe lanzar IllegalArgumentException</td>
+<td class="success">createProduct_NullName_ShouldThrowException()</td>
+<td class="success">0.038s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">CREATE - Precio null debe lanzar IllegalArgumentException</td>
+<td class="success">createProduct_NullPrice_ShouldThrowException()</td>
+<td class="success">0.014s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">CREATE - SellerId null debe lanzar IllegalArgumentException</td>
+<td class="success">createProduct_NullSellerId_ShouldThrowException()</td>
+<td class="success">0.025s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">CREATE - Producto válido debe retornar producto creado con ID</td>
+<td class="success">createProduct_ValidData_ShouldReturnCreatedProduct()</td>
+<td class="success">0.804s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">CREATE - Precio cero debe lanzar IllegalArgumentException</td>
+<td class="success">createProduct_ZeroPrice_ShouldThrowException()</td>
+<td class="success">9.184s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">DELETE - Producto existente debe completar sin error</td>
+<td class="success">deleteProduct_ExistingId_ShouldComplete()</td>
+<td class="success">0.026s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">DELETE - Producto inexistente debe lanzar RuntimeException</td>
+<td class="success">deleteProduct_NonExistentId_ShouldThrowException()</td>
+<td class="success">0.018s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">READ ALL - Debe retornar lista de productos</td>
+<td class="success">getAllProducts_ShouldReturnProductList()</td>
+<td class="success">0.499s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">READ - Producto existente debe retornar producto</td>
+<td class="success">getProductById_ExistingId_ShouldReturnProduct()</td>
+<td class="success">0.030s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">READ - Producto inexistente debe lanzar RuntimeException</td>
+<td class="success">getProductById_NonExistentId_ShouldThrowException()</td>
+<td class="success">0.023s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">UPDATE - Producto inexistente debe lanzar RuntimeException</td>
+<td class="success">updateProduct_NonExistentId_ShouldThrowException()</td>
+<td class="success">0.066s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">UPDATE - Datos válidos debe retornar producto actualizado</td>
+<td class="success">updateProduct_ValidData_ShouldReturnUpdatedProduct()</td>
+<td class="success">0.036s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2025-11-07T11:05:01.358-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.ProductServiceImpl  : Creando nuevo producto: Laptop Test
+2025-11-07T11:05:02.075-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.ProductServiceImpl  : Creando nuevo producto: Laptop Test
+2025-11-07T11:05:02.107-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.ProductServiceImpl  : Producto creado exitosamente con ID: 1
+2025-11-07T11:05:02.554-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.ProductServiceImpl  : Creando nuevo producto: 
+2025-11-07T11:05:02.574-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.ProductServiceImpl  : Creando nuevo producto: Laptop Test
+2025-11-07T11:05:02.610-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.ProductServiceImpl  : Creando nuevo producto: Laptop Test
+2025-11-07T11:05:03.157-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.ProductServiceImpl  : Creando nuevo producto: Laptop Test
+2025-11-07T11:05:03.249-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.ProductServiceImpl  : Creando nuevo producto: Laptop Test
+2025-11-07T11:05:03.331-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.ProductServiceImpl  : Actualizando producto ID: 999
+2025-11-07T11:05:03.339-05:00  WARN 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.ProductServiceImpl  : Producto no encontrado con ID: 999
+2025-11-07T11:05:03.447-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.ProductServiceImpl  : Creando nuevo producto: Laptop Test
+2025-11-07T11:05:03.487-05:00  WARN 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.ProductServiceImpl  : Producto no encontrado con ID: 999
+2025-11-07T11:05:03.526-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.ProductServiceImpl  : Creando nuevo producto: null
+2025-11-07T11:05:03.591-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.ProductServiceImpl  : Eliminando producto ID: 999
+2025-11-07T11:05:03.592-05:00  WARN 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.ProductServiceImpl  : Intento de eliminar producto inexistente ID: 999
+2025-11-07T11:05:03.612-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.ProductServiceImpl  : Creando nuevo producto: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+2025-11-07T11:05:03.660-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.ProductServiceImpl  : Eliminando producto ID: 1
+2025-11-07T11:05:03.664-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.ProductServiceImpl  : Producto eliminado exitosamente ID: 1
+2025-11-07T11:05:03.708-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.ProductServiceImpl  : Actualizando producto ID: 1
+2025-11-07T11:05:03.722-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.ProductServiceImpl  : Producto actualizado exitosamente ID: 1
+</pre>
+</span>
+</div>
+<div class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>WARNING: A Java agent has been loaded dynamically (/home/rafarxs/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.17.7/fbf3d6d649ed37fc9e9c59480a05be0a26e3c2da/byte-buddy-agent-1.17.7.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.14.3</a> at Nov 7, 2025, 11:05:04 AM</p>
+</div>
+</div>
+</body>
+</html>

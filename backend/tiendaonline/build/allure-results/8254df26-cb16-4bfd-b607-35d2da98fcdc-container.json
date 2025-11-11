@@ -1,0 +1,1 @@
+{"uuid":"8254df26-cb16-4bfd-b607-35d2da98fcdc","name":"READ - Producto inexistente debe lanzar RuntimeException","children":["c6bbb834-5388-43a9-a8f2-1df8e178e410"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1762531503484,"stop":1762531503484}],"afters":[],"start":1762531503461,"stop":1762531503502}

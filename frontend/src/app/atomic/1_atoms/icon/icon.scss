@@ -1,0 +1,7 @@
+:host { display: inline-flex; align-items: center; justify-content: center; }
+
+/* Spin animation (simple) */
+.fa-spin, .spin-css {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin { 100% { transform: rotate(360deg); } }

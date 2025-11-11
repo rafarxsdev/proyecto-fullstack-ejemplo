@@ -1,0 +1,1 @@
+{"uuid":"edd4debb-eb99-48af-9e62-62be77f0dd9f","name":"CREATE - Nombre null debe lanzar IllegalArgumentException","children":["b42b4de2-cb42-4277-806b-438eb68d227b"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1762531503524,"stop":1762531503524}],"afters":[],"start":1762531503503,"stop":1762531503551}

@@ -1,0 +1,1 @@
+{"uuid":"8a520e6d-6893-4607-b1b0-a410b497b188","name":"CREATE - Vendedor inexistente debe lanzar RuntimeException","children":["984a9422-2962-4f04-b0a6-e9537430ba9a"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1762531502592,"stop":1762531502592}],"afters":[],"start":1762531502583,"stop":1762531502617}

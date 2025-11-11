@@ -1,0 +1,1 @@
+{"uuid":"80dee5e8-0440-4398-8f80-f1997ce4e6fb","name":"CREATE - Stock negativo debe lanzar IllegalArgumentException","children":["6512087e-098b-43ef-8b06-48574631fc74"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1762531503248,"stop":1762531503248}],"afters":[],"start":1762531503164,"stop":1762531503272}

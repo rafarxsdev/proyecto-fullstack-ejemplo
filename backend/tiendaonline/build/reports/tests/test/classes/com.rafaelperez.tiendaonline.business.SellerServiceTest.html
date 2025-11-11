@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - SellerService - Unit Tests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>SellerService - Unit Tests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.rafaelperez.tiendaonline.business.html">com.rafaelperez.tiendaonline.business</a> &gt; SellerServiceTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">11</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.457s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">CREATE - email duplicado lanza IllegalArgumentException</td>
+<td class="success">createSeller_emailExists_throws()</td>
+<td class="success">0.012s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">CREATE - formato de email inválido lanza IllegalArgumentException</td>
+<td class="success">createSeller_invalidEmailFormat_throws()</td>
+<td class="success">0.318s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">CREATE - vendedor válido retorna vendedor creado</td>
+<td class="success">createSeller_validData_returnsCreatedSeller()</td>
+<td class="success">0.015s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">DELETE - vendedor existente se elimina correctamente</td>
+<td class="success">deleteSeller_existing_deletesSuccessfully()</td>
+<td class="success">0.014s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">DELETE - vendedor no existente lanza RuntimeException</td>
+<td class="success">deleteSeller_notFound_throws()</td>
+<td class="success">0.015s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">GET all - retorna lista vacía correctamente</td>
+<td class="success">getAllSellers_empty()</td>
+<td class="success">0.011s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">GET all - retorna lista (no vacío)</td>
+<td class="success">getAllSellers_nonEmpty()</td>
+<td class="success">0.008s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">GET by id - vendedor existente retorna DTO</td>
+<td class="success">getSellerById_existing_returnsSeller()</td>
+<td class="success">0.009s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">GET by id - no existente lanza RuntimeException</td>
+<td class="success">getSellerById_notFound_throws()</td>
+<td class="success">0.016s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">UPDATE - vendedor no existente lanza RuntimeException</td>
+<td class="success">updateSeller_notFound_throws()</td>
+<td class="success">0.013s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">UPDATE - actualiza campos no nulos y preserva email</td>
+<td class="success">updateSeller_valid_updatesAndKeepEmail()</td>
+<td class="success">0.026s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2025-11-07T11:05:04.117-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Creando nuevo vendedor con email: bad-email-format
+2025-11-07T11:05:04.171-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Creando nuevo vendedor con email: carlos.perez@example.com
+2025-11-07T11:05:04.174-05:00  WARN 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Intento de crear vendedor con email duplicado: carlos.perez@example.com
+2025-11-07T11:05:04.191-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Eliminando vendedor ID: 999
+2025-11-07T11:05:04.195-05:00  WARN 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Vendedor no encontrado con ID: 999
+2025-11-07T11:05:04.236-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Actualizando vendedor ID: 1
+2025-11-07T11:05:04.240-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Vendedor actualizado exitosamente ID: 1
+2025-11-07T11:05:04.269-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Actualizando vendedor ID: 999
+2025-11-07T11:05:04.271-05:00  WARN 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Vendedor no encontrado con ID: 999
+2025-11-07T11:05:04.307-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Creando nuevo vendedor con email: carlos.perez@example.com
+2025-11-07T11:05:04.309-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Vendedor creado exitosamente con ID: 1
+2025-11-07T11:05:04.327-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Eliminando vendedor ID: 1
+2025-11-07T11:05:04.330-05:00  INFO 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Vendedor eliminado exitosamente ID: 1
+2025-11-07T11:05:04.357-05:00  WARN 907031 --- [tienda-virtual-api] [    Test worker] c.r.t.b.service.impl.SellerServiceImpl   : Vendedor no encontrado con ID: 999
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.14.3</a> at Nov 7, 2025, 11:05:04 AM</p>
+</div>
+</div>
+</body>
+</html>

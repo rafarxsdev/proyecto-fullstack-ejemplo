@@ -1,0 +1,1 @@
+{"uuid":"10395933-08a6-4e73-b736-1f215edcd124","name":"CREATE - Nombre vacío debe lanzar IllegalArgumentException","children":["8a22f472-bc3b-4908-b4ff-73cac2b4bc5b"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1762531502552,"stop":1762531502552}],"afters":[],"start":1762531502541,"stop":1762531502558}
