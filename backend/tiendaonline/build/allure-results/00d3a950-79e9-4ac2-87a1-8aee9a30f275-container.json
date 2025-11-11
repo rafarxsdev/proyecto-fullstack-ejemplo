@@ -1,1 +1,0 @@
-{"uuid":"00d3a950-79e9-4ac2-87a1-8aee9a30f275","name":"UPDATE - Datos válidos debe retornar producto actualizado","children":["86005bb8-b535-49de-84b3-63a3581503c4"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1762531503703,"stop":1762531503703}],"afters":[],"start":1762531503679,"stop":1762531503735}

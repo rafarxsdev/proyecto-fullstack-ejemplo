@@ -1,1 +1,0 @@
-{"uuid":"bee4cd71-b976-4615-8041-5a9087173394","name":"READ ALL - Debe retornar lista de productos","children":["848fbdfe-2108-4558-ae62-b9fad5efac02"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1762531502643,"stop":1762531502643}],"afters":[],"start":1762531502619,"stop":1762531503134}

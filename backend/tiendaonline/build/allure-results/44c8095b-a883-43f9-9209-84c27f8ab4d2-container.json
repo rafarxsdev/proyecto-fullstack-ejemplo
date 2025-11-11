@@ -1,1 +1,0 @@
-{"uuid":"44c8095b-a883-43f9-9209-84c27f8ab4d2","name":"UPDATE - Producto inexistente debe lanzar RuntimeException","children":["c532e5f1-32ff-4e3f-8046-2ccb088efc78"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1762531503308,"stop":1762531503308}],"afters":[],"start":1762531503282,"stop":1762531503361}

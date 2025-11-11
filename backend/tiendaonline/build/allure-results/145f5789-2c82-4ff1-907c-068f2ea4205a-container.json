@@ -1,1 +1,0 @@
-{"uuid":"145f5789-2c82-4ff1-907c-068f2ea4205a","name":"CREATE - Precio null debe lanzar IllegalArgumentException","children":["48ccc31b-803c-4481-bff9-69fa084b9546"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1762531502573,"stop":1762531502573}],"afters":[],"start":1762531502560,"stop":1762531502581}

@@ -1,1 +1,0 @@
-{"uuid":"9f782f89-39ab-4e8e-975e-27550d4b4e38","name":"GET all - retorna lista (no vacío)","children":["c90fc951-a91a-41be-81fc-dedb879e7040"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1762531504210,"stop":1762531504210}],"afters":[],"start":1762531504202,"stop":1762531504219}

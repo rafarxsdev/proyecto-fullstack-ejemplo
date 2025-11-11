@@ -1,1 +1,0 @@
-{"uuid":"8fd787f6-b72a-410d-93fb-81162a0331c1","name":"DELETE - vendedor no existente lanza RuntimeException","children":["8a055fc7-fa50-4d4c-b60f-14ec5c329a1a"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1762531504188,"stop":1762531504189}],"afters":[],"start":1762531504180,"stop":1762531504200}

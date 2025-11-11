@@ -1,1 +1,0 @@
-{"uuid":"143fe2cb-da58-4bae-baa4-ba46a908f897","name":"CREATE - Precio cero debe lanzar IllegalArgumentException","children":["1e46c114-4cff-443d-90b3-384b133cd0fb"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1762531498391,"stop":1762531498398}],"afters":[],"start":1762531492508,"stop":1762531501697}

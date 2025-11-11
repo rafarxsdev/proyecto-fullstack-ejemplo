@@ -1,1 +1,0 @@
-{"uuid":"d483523b-0927-4776-b3b0-1fb99b56db48","name":"UPDATE - vendedor no existente lanza RuntimeException","children":["4f323f37-b179-4eb9-ab4f-e454407c9a55"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1762531504266,"stop":1762531504266}],"afters":[],"start":1762531504257,"stop":1762531504277}
